@@ -77,19 +77,19 @@ ostream &operator << ( ostream & os, const map< F, S > &v ) {
 #define dbg(args...) do {cerr << #args << " : "; func(args); } while(0)
  
 void func () {
-            cerr << endl;
+	cerr << endl;
 }
  
 template <typename T>
 void func( T a[], int n ) {
-            for(int i = 0; i < n; ++i) cerr << a[i] << ' ';
-                cerr << endl;
+	for(int i = 0; i < n; ++i) cerr << a[i] << ' ';
+	cerr << endl;
 }
  
 template <typename T, typename ... hello>
 void func( T arg, const hello &... rest) {
-            cerr << arg << ' ';
-                func(rest...);
+	cerr << arg << ' ';
+	func(rest...);
 }
 
 void fast() {
